@@ -280,6 +280,7 @@ export abstract class AbstractComponent {
             this._dragDropService.allowedDropZones = this.dropZones;
             // console.log('ondragstart.allowedDropZones', this._dragDropService.allowedDropZones);
             this._onDragStartCallback(event);
+            event.stopPropagation();
         }
     }
 
