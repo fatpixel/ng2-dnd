@@ -8,7 +8,7 @@
     "test-watch": "tsc --noUnusedParameters --noUnusedLocals && karma start --no-single-run --auto-watch",
     "commit": "npm run prepublish && npm test && git-cz",
     "prepublish": "ngc && npm run build",
-    "buildalt": "webpack && cp style.css bundles/style.css",
+    "build-alt": "webpack && cp style.css bundles/style.css",
     "watch": "ntsc -w",
     "build": "npm run clean && ngc && ng-packagr -p ng-package.json && cp style.css dist/bundles/style.css && rimraf dist/tests",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
