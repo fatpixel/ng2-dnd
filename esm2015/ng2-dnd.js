@@ -487,6 +487,13 @@ class SortableContainer extends AbstractComponent {
         this.dropZones = value;
     }
     /**
+     * @param {?} value
+     * @return {?}
+     */
+    set allowdrop(value) {
+        this.allowDrop = value;
+    }
+    /**
      * @param {?} event
      * @return {?}
      */
@@ -556,6 +563,7 @@ SortableContainer.propDecorators = {
     "draggable": [{ type: Input, args: ["dragEnabled",] },],
     "sortableData": [{ type: Input },],
     "dropzones": [{ type: Input, args: ["dropZones",] },],
+    "allowdrop": [{ type: Input, args: ["allowDrop",] },],
 };
 class SortableArrayHandler {
     /**

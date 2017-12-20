@@ -519,6 +519,17 @@ var SortableContainer = /** @class */ (function (_super) {
         enumerable: true,
         configurable: true
     });
+    Object.defineProperty(SortableContainer.prototype, "allowdrop", {
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        set: function (value) {
+            this.allowDrop = value;
+        },
+        enumerable: true,
+        configurable: true
+    });
     /**
      * @param {?} event
      * @return {?}
@@ -590,6 +601,7 @@ SortableContainer.propDecorators = {
     "draggable": [{ type: Input, args: ["dragEnabled",] },],
     "sortableData": [{ type: Input },],
     "dropzones": [{ type: Input, args: ["dropZones",] },],
+    "allowdrop": [{ type: Input, args: ["allowDrop",] },],
 };
 var SortableArrayHandler = /** @class */ (function () {
     function SortableArrayHandler() {

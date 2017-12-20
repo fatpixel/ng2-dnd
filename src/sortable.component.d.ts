@@ -11,6 +11,7 @@ export declare class SortableContainer extends AbstractComponent {
     private sortableHandler;
     sortableData: Array<any> | FormArray;
     dropzones: Array<string>;
+    allowdrop: (dropData: any) => boolean;
     constructor(elemRef: ElementRef, dragDropService: DragDropService, config: DragDropConfig, cdr: ChangeDetectorRef, _sortableDataService: DragDropSortableService);
     _onDragEnterCallback(event: Event): void;
     getItemAt(index: number): any;
