@@ -1,7 +1,7 @@
 {
   "name": "ng2-dnd",
   "description": "Angular 2 Drag-and-Drop without dependencies",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "scripts": {
     "test": "karma start",
     "clean": "rimraf dist",
@@ -10,12 +10,12 @@
     "prepublish": "ngc && npm run build",
     "build-alt": "webpack && cp style.css bundles/style.css",
     "watch": "ntsc -w",
-    "build": "npm run clean && ngc && ng-packagr -p ng-package.json && cp style.css dist/bundles/style.css && rimraf dist/tests",
+    "build": "npm run clean && ngc && ng-packagr -p ng-package.json",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/akserg/ng2-dnd.git"
+    "url": "https://github.com/fatpixel/ng2-dnd.git"
   },
   "keywords": [
     "angular",
@@ -28,12 +28,12 @@
   "author": "Sergey Akopkokhyants <akserg@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/akserg/ng2-dnd/issues"
+    "url": "https://github.com/fatpixel/ng2-dnd/issues"
   },
   "main": "./bundles/ng2-dnd.umd.js",
   "module": "./ng2-dnd.es5.js",
   "typings": "./ng2-dnd.d.ts",
-  "homepage": "https://github.com/akserg/ng2-dnd#readme",
+  "homepage": "https://github.com/fatpixel/ng2-dnd#readme",
   "peerDependencies": {
     "@angular/core": "^4.0.0 || ^5.0.0",
     "@angular/forms": "^4.0.0 || ^5.0.0"
@@ -75,7 +75,7 @@
     "ts-helpers": "1.1.2",
     "tslint": "^5.4.3",
     "tslint-loader": "^3.5.3",
-    "typescript": "^2.3.4",
+    "typescript": "^2.5",
     "webpack": "^3.6.0",
     "zone.js": "^0.8.12"
   },

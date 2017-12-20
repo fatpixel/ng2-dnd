@@ -39,6 +39,10 @@ export class SortableContainer extends AbstractComponent {
         this.dropZones = value;
     }
 
+    @Input("allowDrop") set allowdrop(value: (dropData: any) => boolean) {
+        this.allowDrop = value;
+    }
+
     constructor(elemRef: ElementRef, dragDropService: DragDropService, config:DragDropConfig, cdr:ChangeDetectorRef,
         private _sortableDataService: DragDropSortableService) {
 
